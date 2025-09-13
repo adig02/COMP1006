@@ -28,7 +28,7 @@ h3{
     font-size: 20px;
 }
 .pageContainer{
-    padding: 50px;
+    padding: 130px 50px;
 }
 /* ---------- Header Styling ---------- */
 header{
@@ -38,6 +38,7 @@ header{
     align-items: center;
     height: 10vh;
     background-color: #1E1E1E;
+    position: fixed;
 }
 header nav menu{
     display: flex;

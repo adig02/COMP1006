@@ -31,38 +31,39 @@ $currentPage = isset($_GET['page']) ? max(1, (int)$_GET['page']) : 1;
         <link rel="stylesheet" href="./css/style.css">
     </head>
     <!--Area visible to the end user -->
-    <header>
-        <!--logo container-->
-        <div>
-            <a id="logo-container" href="index.php">
-                <h1>GIF Explorer</h1>
-                <img id="logo" src="./img/Giphy%20Logo.svg" alt="Giphy Logo">
-            </a>
-        </div>
-        <!--Menu Bar-->
-        <nav>
-            <menu class="menu">
-                <li><a href="index.php">Trending</a></li>
-                <li><a href="https://giphy.com/?type=stickers">Stickers</a></li>
-                <li><a href="https://giphy.com/?type=clips">Clips</a></li>
-                <li><a href="https://giphy.com/">GIPHY</a></li>
-            </menu>
-        </nav>
-    </header>
     <body>
-        <section class="pageContainer">
-            <h2>Trending Gifs </h2>
-            <section>
-                <?php
-                $app->showTrendingGifs($currentPage);
-                ?>
+        <header>
+            <!--logo container-->
+            <div>
+                <a id="logo-container" href="index.php">
+                    <h1>GIF Explorer</h1>
+                    <img id="logo" src="./img/Giphy%20Logo.svg" alt="Giphy Logo">
+                </a>
+            </div>
+            <!--Menu Bar-->
+            <nav>
+                <menu class="menu">
+                    <li><a href="index.php">Trending</a></li>
+                    <li><a href="https://giphy.com/?type=stickers">Stickers</a></li>
+                    <li><a href="https://giphy.com/?type=clips">Clips</a></li>
+                    <li><a href="https://giphy.com/">GIPHY</a></li>
+                </menu>
+            </nav>
+        </header>
+        <main>
+            <section class="pageContainer">
+                <h2>Trending Gifs </h2>
+                <section>
+                    <?php
+                    $app->showTrendingGifs($currentPage);
+                    ?>
+                </section>
             </section>
-        </section>
+        </main>
+        <footer>
+            <p>COMP1006 - Assignment 1 by Adi G </p>
+            <a href="https://developers.giphy.com/"> GIPHY API </a>
+            <p> This app uses the GIPHY API but is not endorsed or certified by GIPHY.</p>
+        </footer>
     </body>
-    <footer>
-        <p>COMP1006 - Assignment 1 by Adi G </p>
-        <a href="https://developers.giphy.com/"> GIPHY API </a>
-        <p> This app uses the GIPHY API but is not endorsed or certified by GIPHY.</p>
-    </footer>
-
-
+</html>
