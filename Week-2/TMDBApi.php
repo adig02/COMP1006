@@ -23,13 +23,13 @@
             $response = curl_exec($ch);
             if(curl_errno($ch)){
                 http_response_code(404);
-                throw  new Exception("cURL Error: " . curl_error($ch));
+                throw new Exception("cURL Error: " . curl_error($ch));
             }
             $statusCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
             curl_close($ch);
 
             if($statusCode == 404){
-                throw  new Exception("Movie not found");
+                throw new Exception("Movie not found");
             }
             $data = json_decode($response, true);
 
