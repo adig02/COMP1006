@@ -1,0 +1,139 @@
+/* ---------- General Page Styling ---------- */
+html{
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Poppins', sans-serif;
+}
+a,li,p{
+    font-family: 'Roboto', sans-serif;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    font-size: 18px;
+}
+h2{
+    font-size: 60px;
+    margin: 0;
+}
+h3{
+    font-size: 20px;
+}
+.pageContainer{
+    padding: 50px;
+}
+/* ---------- Header Styling ---------- */
+header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    background-color: #1E1E1E;
+}
+header nav menu{
+    display: flex;
+    padding-right: 40px;
+    gap: 40px;
+}
+#logo-container{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 20px;
+}
+#logo{
+    height: 50px;
+    width: 50px;
+    padding-left: 40px;
+}
+header a{
+    color: #ff5757;
+}
+header a:hover{
+    font-weight: bold;
+    transition: .1s;
+}
+/* ---------- Gif App/API Styling ---------- */
+.gifs-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    height: 100%;
+    padding-top: 50px;
+}
+.gif-card{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#card-img{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+#card-img:hover{
+    transform: scale(1.1);
+    transition: .2s;
+}
+/* Next/Prev Buttons */
+.pagination-container{
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    padding-top: 40px;
+}
+.buttons{
+    background-color: #ff5757;
+    padding: 10px;
+    border-radius: 10px;
+    color: #f8f8f8;
+}
+.buttons:hover{
+    background-color: #fa1616;
+}
+/* ---------- Footer Styling ---------- */
+footer{
+    background-color: #1E1E1E;
+    color: #ff5757;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+footer a{
+    color: #ff5757;
+    font-weight: bold;
+}
+/* ---------- Responsive Design ---------- */
+@media screen and (max-width: 900px){
+    .menu{
+        display: none;
+    }
+    .gifs-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+    }
+    h2{
+        font-size: 45px;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+}
