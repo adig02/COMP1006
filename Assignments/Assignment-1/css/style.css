@@ -7,11 +7,11 @@ body {
     padding: 0;
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,h2,h4,h5,h6,a,li,p,a{
     font-family: 'Poppins', sans-serif;
 }
-a,li,p{
-    font-family: 'Roboto', sans-serif;
+h3{
+    font-family: 'Sour Gummy', sans-serif;
 }
 li{
     list-style: none;
@@ -23,9 +23,10 @@ a{
 h2{
     font-size: 60px;
     margin: 0;
+    padding-left: 35px;
 }
 h3{
-    font-size: 20px;
+    font-size: 25px;
 }
 .pageContainer{
     padding: 130px 50px;
@@ -79,14 +80,18 @@ header a:hover{
     align-items: center;
     text-align: center;
 }
+.gif-card a{
+    width: 90%;
+}
 #card-img{
     width: 100%;
     height: auto;
     border-radius: 20px;
 }
 #card-img:hover{
-    transform: scale(1.1);
-    transition: .2s;
+    transform: scale(1.05);
+    transition: .2s ease-in-out;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 /* Next/Prev Buttons */
 .pagination-container{
@@ -103,23 +108,51 @@ header a:hover{
 }
 .buttons:hover{
     background-color: #fa1616;
+    transition: .2s ease-in-out;
 }
 /* ---------- Footer Styling ---------- */
 footer{
     background-color: #1E1E1E;
     color: #ff5757;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 20px;
+    height: 10vh;
 }
 footer a{
     color: #ff5757;
     font-weight: bold;
 }
+footer img{
+    height: 30px;
+    width: 30px;
+}
+footer p{
+    margin: 0;
+}
 /* ---------- Responsive Design ---------- */
-@media screen and (max-width: 900px){
+@media screen and (max-width: 960px){
+    .gifs-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: auto;
+    }
+    h2{
+        font-size: 45px;
+    }
+    footer{
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+        height: 20vh;
+        gap: 10px;
+    }
+    .pagination-container{
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 755px){
     .menu{
         display: none;
     }
@@ -128,13 +161,12 @@ footer a{
         grid-template-columns: 1fr;
         grid-auto-rows: auto;
     }
-    h2{
-        font-size: 45px;
+}
+@media screen and (max-width: 400px){
+    .buttons{
+        font-size: 10px;
     }
-    footer{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        padding: 10px;
+    h1{
+        font-size: 25px;
     }
 }

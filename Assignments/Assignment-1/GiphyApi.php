@@ -15,7 +15,7 @@
          * Make our request to the GIPHY API using cURL
          */
         private function request($endpoint){
-            $url = $this->baseUrl . $endpoint . "&apiKey=" . $this->apiKey;
+            $url = $this->baseUrl . $endpoint . "&api_key=" . $this->apiKey;
             // initialize cURL
             $ch = curl_init($url);
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);

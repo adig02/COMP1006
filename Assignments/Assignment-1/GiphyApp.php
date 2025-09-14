@@ -21,9 +21,8 @@
             echo '<section class="gifs-container">';
             foreach ($gifs as $gif) {
                 // here it will grab the gif url with fallbacks
-                $imgUrl = $gif['images']['downsized']['url']
-                    ?? $gif['images']['downsized_medium']['url']
-                    ?? $gif['images']['fixed_height']['url']
+                $imgUrl = $gif['images']['fixed_height']['url']
+                    ?? $gif['images']['fixed_height_downsampled']['url']
                     ?? $gif['images']['original']['url']
                     ?? null;
                 if (!$imgUrl) {
@@ -48,10 +47,10 @@
             $nextPage = $page + 1;
             // only display the previous page button if page > 1
             if ($page > 1){
-                echo "<a class='buttons' href='?page={$prevPage}'>Previous Page</a>";
+                echo "<a class='buttons' href='?page={$prevPage}'> ← Previous Page </a>";
             }
             // next page button always displayed
-            echo "<a class='buttons' href='?page={$nextPage}'>Next Page</a>";
+            echo "<a class='buttons' href='?page={$nextPage}'>Next Page →</a>";
             echo "</section>";
 
         }
