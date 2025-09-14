@@ -33,7 +33,7 @@ $currentPage = isset($_GET['page']) ? max(1, (int)$_GET['page']) : 1;
     <!--Area visible to the end user -->
     <body>
         <header>
-            <!--logo container-->
+            <!--Logo container-->
             <div>
                 <a id="logo-container" href="index.php">
                     <h1>GIF Explorer</h1>
@@ -51,13 +51,11 @@ $currentPage = isset($_GET['page']) ? max(1, (int)$_GET['page']) : 1;
             </nav>
         </header>
         <main>
-            <section class="pageContainer">
-                <h2>Trending Gifs </h2>
-                <section>
-                    <?php
-                    $app->showTrendingGifs($currentPage);
-                    ?>
-                </section>
+            <section class="page-container">
+                <h2>Trending GIFs</h2>
+                <?php
+                $app->showTrendingGifs($currentPage);
+                ?>
             </section>
         </main>
         <footer>
