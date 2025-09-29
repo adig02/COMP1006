@@ -1,0 +1,488 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        interpolate-size: allow-keywords;
+    }
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+p {
+    text-wrap: pretty;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+}
+
+#root, #__next {
+    isolation: isolate;
+}
+
+/* ------------------------------------------------ General Styling  -------------------------------------------------*/
+html{
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3 {
+    font-family: 'Bungee', sans-serif;
+}
+
+h4, h5, h6, p, a, li, ol, ul, label, input, textarea, form, fieldset, legend {
+    font-family: 'Fredoka', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-align {
+    text-align: center;
+}
+
+h1 {
+    font-size: 5rem;
+    color: #1E1E1E;
+    text-shadow: 4px 3px 0 #ffffff;
+    text-align: center;
+    line-height: 1;
+}
+
+h2 {
+    font-size: 3rem;
+    color: #e65100;
+    text-align: center;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+a {
+    color: #f8f8f8;
+}
+
+
+/* ------------------------------------------------ Header -----------------------------------------------------------*/
+header {
+    display: flex;
+    height: 7rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    position: fixed;
+    background-color: #e65100;
+    width: 100%;
+    z-index: 99999;
+    color: #f8f8f8;
+}
+
+header img {
+    width: 7rem;
+    height: 7rem;
+}
+
+header nav menu {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+}
+
+header nav menu li a:hover {
+    font-weight: 500;
+    transition: font-weight 0.2s ease-in-out;
+}
+#mobile-menu{
+    display: none;
+}
+
+/* --------------------------------------------- Hero Section --------------------------------------------------------*/
+.hero {
+    height: 100vh;
+    background: url("../img/hero-bg.jpeg") no-repeat center/cover fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero a {
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+    background: #ff6600;
+    color: #f8f8f8;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    position: relative;
+    top: 4rem;
+}
+
+.hero a:hover {
+    background: #e65100;
+    transform: translateY(-2px);
+}
+
+/* ------------------------------------------- About Us Section ------------------------------------------------------*/
+.about-us img {
+    width: 100%;
+    height: auto;
+}
+.about-txt{
+    margin: 5rem 10rem;
+}
+
+/* --------------------------------------------- Menu Section --------------------------------------------------------*/
+.menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto repeat(3, auto);
+    text-align: center;
+    padding: 7rem 2rem;
+    background-color: #fff3e0;
+}
+
+.menu h2 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    align-self: center;
+    margin-bottom: 2rem;
+}
+
+.custom-built {
+    grid-column: 1/3;
+    grid-row: 4/5;
+}
+
+.menu div img {
+    width: 60%;
+    height: auto;
+    padding-top: 1.5rem;
+}
+
+#custom-built-img {
+    width: 30%;
+    height: auto;
+}
+
+.card {
+    background-color: #f8f8f8;
+    margin: 2rem 2rem;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 3px 8px;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    transform: scale(1.01) translateY(-2px);
+    transition: box-shadow 0.3s, transform 0.3s ease-in-out;
+}
+
+/* --------------------------------------------- Order Section -------------------------------------------------------*/
+.order {
+    padding: 10rem 0;
+}
+
+form {
+    max-width: 125ch;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff8f0;
+    border: 2px solid #e65100;
+    border-radius: 2rem;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+form ul li{
+    list-style: none;
+}
+form ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 2rem;
+    padding: 1rem 0;
+}
+
+fieldset p {
+    font-weight: bold;
+    color: #e65100;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+label {
+    font-weight: 500;
+    display: inline-block;
+    margin: 0.5rem 0.3rem;
+}
+
+input[type="text"], input[type="tel"], input[type="email"], input[type="number"], select {
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.specials-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.specials-container div {
+    background: #fff3e0;
+    padding: 1rem;
+    border: 1px solid #ffcc80;
+    border-radius: 8px;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    margin-right: 0.4rem;
+    accent-color: #e65100;
+}
+
+fieldset.build-your-own label {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+#submit-button {
+    background: #ff6600;
+    color: #f8f8f8;
+    border: none;
+    padding: 0.8rem 2rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+#submit-button:hover {
+    background: #e65100;
+    transform: translateY(-2px);
+}
+
+#submit-button:active {
+    transform: translateY(0);
+}
+
+.alert-success {
+    background: #d4edda;
+    color: #155724;
+    padding: 1rem;
+    border-radius: 6px;
+    border: 1px solid #c3e6cb;
+    margin: 3rem 0;
+}
+
+.alert-error {
+    background: #f8d7da;
+    color: #721c24;
+    padding: 1rem;
+    border-radius: 6px;
+    margin: 3rem 0;
+    border: 1px solid #f5c6cb;
+}
+
+/* --------------------------------------------- Footer Section ------------------------------------------------------*/
+footer {
+    background: #ff6600;
+    color: #f8f8f8;
+    padding: 2rem 2rem;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.footer-about {
+    max-width: 300px;
+}
+
+footer h3,
+footer h4 {
+    margin-bottom: 0.8rem;
+    color: #f8f8f8;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links a:hover {
+    color: #ffe0b2; /* lighter orange/cream */
+}
+
+.footer-contact p {
+    margin: 0.3rem 0;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    font-size: 1rem;
+}
+
+/* --------------------------------------------- Responsive Design ---------------------------------------------------*/
+
+@media screen and (max-width: 1370px){
+    #about{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1175px){
+    form{
+        margin: 4rem;
+    }
+    #menu{
+        display: flex;
+        flex-direction: column;
+    }
+    #menu div img{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .order{
+        padding: 5rem 0;
+    }
+    .specials-container{
+        display: flex;
+        flex-direction: column;
+    }
+    header nav menu{
+        display: none;
+    }
+    .footer-container{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        padding-top: 2rem;
+    }
+    #mobile-menu{
+        display: block;
+        height: 2rem;
+        width: 2rem;
+        color: #f8f8f8;
+    }
+    .hero {
+        background-attachment: scroll;
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 420px){
+    h1{
+        font-size: 3rem;
+    }
+    h2{
+        font-size: 2rem;
+        margin: 0 2rem;
+    }
+    h3{
+        font-size: 1.5rem;
+    }
+    h4{
+        font-size: 1rem;
+    }
+    .card{
+        margin: 1rem 0;
+    }
+    #menu div img {
+        width: 100%;
+    }
+    form{
+        margin: 2rem;
+    }
+    .menu{
+        padding: 5rem 2rem;
+    }
+}
