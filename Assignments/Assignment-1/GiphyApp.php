@@ -34,7 +34,7 @@
                 $title = htmlspecialchars($gif['title'] ?? "Unknown title");
                 // creating individual gif cards with the title and img
                 echo "<div class='gif-card'>";
-                    echo "<a href='{$imgUrl}'><img id='card-img' src='{$img}' alt='{$title}'></a>";
+                    echo "<a href='{$imgUrl}'><img class='card-img' src='{$img}' alt='{$title}'></a>";
                     echo "<h3>{$title} </h3>";
                 echo "</div>";
             }

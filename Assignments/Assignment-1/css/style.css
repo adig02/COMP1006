@@ -84,12 +84,12 @@ header a:hover{
 .gif-card a{
     width: 90%;
 }
-#card-img{
+.card-img{
     width: 100%;
     height: auto;
     border-radius: 20px;
 }
-#card-img:hover{
+.card-img:hover{
     transform: scale(1.05);
     transition: .2s ease-in-out;
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
