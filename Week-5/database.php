@@ -4,7 +4,7 @@
         // Database credentials
         private $host = "172.31.22.43"; // Host name
         private $username = "Adi200640837"; // MySQL username
-        private $password = "sW_5gvTdvJ"; // MySQL password
+        private $password = ""; // MySQL password
         private $database = "Adi200640837"; // Name of your database
 
         // the database connection variable, this will hold the actual connection object
