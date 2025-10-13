@@ -38,7 +38,7 @@
                     $age = htmlspecialchars($profile['age']);
                     $email = htmlspecialchars($profile['email']);
                     $gender = htmlspecialchars($profile['gender']);
-                    $bio = htmlspecialchars($profile['bio']);
+                    $bio = htmlspecialchars_decode($profile['bio']);
                     $joined = htmlspecialchars($profile['join_date']);
                     echo "<h3>$full_name</h3>";
                     echo "<div class='profile-head card'>";
