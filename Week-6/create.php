@@ -47,8 +47,8 @@
                     <textarea class="form-control" id="description" name="description" rows="3" required><?php echo htmlspecialchars($description ?? ''); ?></textarea>
                 </div>   
                 <div class="mb-3">
-                    <label for="product_image" class="form-label">Product Image</label>
-                    <input class="form-control" type="file" id="product_image" name="product_image" required>
+                    <label for="profile_image" class="form-label">Profile Image</label>
+                    <input class="form-control" type="file" id="profile_image" name="profile_image" required>
                     <small class="text-muted">Allowed: JPG, PNG, GIF. Max 2MB.</small>
                 </div>      
                 <button type="submit" class="btn btn-primary">Save Product</button>
