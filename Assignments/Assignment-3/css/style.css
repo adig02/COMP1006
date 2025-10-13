@@ -1,0 +1,441 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        interpolate-size: allow-keywords;
+    }
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+p {
+    text-wrap: pretty;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+}
+
+#root, #__next {
+    isolation: isolate;
+}
+
+/*----------------------------------------------------General Styling-------------------------------------------------*/
+:root {
+    --blue: #3B82F6;
+    --light-blue: #60A5FA;
+    --dark-blue: #0F172A;
+    --gray: #64748B;
+    --bg-colour: #eef2f6;
+    --white: #f5f5f5;
+    --text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.9);
+}
+
+body {
+    background-color: var(--white);
+}
+
+h1, h2, h3 {
+    font-family: 'Bungee', sans-serif;
+}
+
+p, a, li, ul, ol, dl, dt, dd {
+    font-size: 1rem;
+    font-family: 'Fredoka', sans-serif;
+    max-width: 75ch;
+}
+
+h1 {
+    font-size: clamp(2rem, 11vw, 11rem);
+    color: var(--white);
+    text-shadow: var(--text-shadow);
+    text-align: center;
+    line-height: 1.1;
+    margin: 0 6rem;
+}
+
+h2 {
+    color: var(--white);
+    text-shadow: var(--text-shadow);
+    text-align: center;
+    font-size: 2rem
+}
+
+h3 {
+    text-align: center;
+    font-size: 3rem;
+    margin: 1rem;
+
+}
+
+h4, h5 {
+    font-family: 'Fredoka', sans-serif;
+}
+
+h5 {
+    width: 100%;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.alert {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*--------------------------------------------------------Header------------------------------------------------------*/
+header {
+    display: flex;
+    height: 7rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    position: fixed;
+    background-color: var(--white);
+    width: 100%;
+    z-index: 999;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+header div {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    width: auto;
+    height: 80%;
+}
+
+header nav menu {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+}
+
+header nav menu li a:hover {
+    font-weight: 500;
+    transition: font-weight 0.2s ease-in-out;
+    color: var(--dark-blue);
+}
+
+#mobile-menu {
+    display: none;
+}
+
+header a {
+    font-size: 1.2rem;
+    color: var(--dark-blue);
+}
+
+/*----------------------------------------------------------Hero------------------------------------------------------*/
+.hero {
+    padding-top: 7rem;
+    height: 100vh;
+    background: url("../img/hero-bg.jpg") no-repeat center/cover fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-btn {
+    display: flex;
+    gap: 1rem;
+    padding-top: 1.5rem;
+}
+
+/*----------------------------------------------------------Form------------------------------------------------------*/
+.create_profile {
+    margin: 7rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    padding-top: 3rem;
+    max-width: 100ch;
+    margin: 0 auto;
+}
+
+#submit-button {
+    margin-top: 2rem;
+    width: 100%;
+}
+
+#adjustment-bio {
+    padding-top: 1rem;
+}
+
+/*--------------------------------------------------All Profiles------------------------------------------------------*/
+.profile-hero {
+    padding-top: 7rem;
+    height: 100vh;
+    background: url("../img/hero-bg.jpg") no-repeat center/cover fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-hero h2 {
+    font-size: 6rem;
+    margin: 0 2rem;
+}
+
+.profile-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+    margin: 5rem;
+}
+
+.card {
+    background-color: #f8f8f8;
+    width: 90%;
+    height: 90%;
+    margin: 2rem 2rem;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 3px 8px;
+}
+
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-card img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    transform: scale(1.01) translateY(-2px);
+    transition: box-shadow 0.3s, transform 0.3s ease-in-out;
+}
+
+.user-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.msg-box {
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+
+.username {
+    color: var(--blue);
+}
+
+/*-------------------------------------------Individual Profiles------------------------------------------------------*/
+.single-profile-container {
+    padding-top: 12rem;
+    padding-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.single-profile-container .card {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding-top: 3rem;
+    background-color: var(--white);
+    color: var(--dark-blue);
+}
+
+.profile-head img {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.profile-head p {
+    width: 100%;
+    text-align: center;
+}
+
+.profile-text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.profile-btns{
+    display: flex;
+    gap: 1rem;
+}
+
+/*--------------------------------------------------------Footer------------------------------------------------------*/
+footer {
+    background-color: var(--dark-blue);
+    padding: 2rem 0;
+}
+
+h6 {
+    color: var(--white);
+    text-align: center;
+    font-family: 'Fredoka', sans-serif;
+}
+
+
+/*---------------------------------------------------Responsive Design------------------------------------------------*/
+@media screen and (max-width: 1400px) {
+    .profile-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .msg-box {
+        grid-column: 1/-1;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .profile-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    header nav menu {
+        display: none;
+    }
+
+    #mobile-menu {
+        display: block;
+        height: 40px;
+        width: 40px;
+    }
+
+    .single-profile-container .card {
+        width: 75%;
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .msg-box {
+        grid-column: 1;
+    }
+
+    .profile-head img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .profile-card img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    header {
+        padding: 0 1rem;
+        height: 6rem;
+    }
+
+    header img {
+        height: 60%;
+    }
+
+    .profile-container {
+        margin: 2rem;
+    }
+
+    .profile-hero h2 {
+        font-size: 3rem;
+    }
+
+    .hero-btn {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .bg-mobile {
+        background-attachment: scroll;
+        background-size: cover;
+    }
+
+    .create_profile {
+        margin: 3rem auto;
+    }
+
+    .card {
+        width: 80%;
+    }
+    p,h5{
+        font-size: 0.75rem;
+    }
+}
