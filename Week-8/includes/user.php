@@ -31,4 +31,29 @@ class User {
         return $stmt->fetch(PDO::FETCH_ASSOC);
     }
 
+    // update a record
+    public function update($id, $name, $email, $image = null){
+        // using an if/else here because if user uploads a new image it will update it or if no image then goes to the else block
+        // if not updating image can use simple update statement without if/else
+        if($image){
+            $sql = "UPDATE {$this->table} SET name = :name, email = :email, image = :image WHERE id = :id";
+            $stmt = $this->conn->prepare($sql);
+            return $stmt->execute([
+                ':name' => $name,
+                ':email' => $email,
+                ':image' => $image,
+                ':id' => $id
+            ]);
+        } else {
+            $sql = "UPDATE {$this->table} SET name = :name, email = :email WHERE id = :id";
+            $stmt = $this->conn->prepare($sql);
+            return $stmt->execute([
+                ':name' => $name,
+                ':email' => $email,
+                ':id' => $id
+            ]);
+        }
+
+    }
+
 }
