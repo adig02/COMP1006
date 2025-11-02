@@ -1,4 +1,25 @@
 <?php
+    $pageTitle = "Add User";
+    $pageDesc = "This page will allow you to create a user";
+    require 'includes/header.php';
+    require 'includes/database.php'; // connection
+    require 'includes/user.php'; // CRUD
+
+    // variable to hold db connection
+    $db = (new Database())->connect();
+    $user = (new User($db));
+
+    // if form submitted
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $name = $_POST["name"];
+        $email = $_POST["email"];
+        $imageName = '';
+
+        // add image
+        if (!empty($_FILES['image']['name'])) {
+            $imageName = time() . '_' . basename($_FILES['image']['name']);
+        }
+    }
 
 ?>
 <section class="lesson-masthead">
