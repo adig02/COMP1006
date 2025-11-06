@@ -1,1 +1,22 @@
 <?php
+    // setting the custom metadata
+    $pageTitle = "PROJECTNAME | Home";
+    $pageDesc = "HOME PAGE DESCRIPTION";
+
+    // include required files
+
+    // adding the header
+    require './templates/header.php';
+?>    
+    <h1>H1</h1>
+    <h2>H2</h2>
+    <h3>H3</h3>
+    <h4>H4</h4>
+    <h5>H5</h5>
+    <h6>H6</h6>
+
+<?php
+    // adding the footer
+    require './templates/footer.php';
+?>
+
