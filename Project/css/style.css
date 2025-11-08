@@ -64,6 +64,7 @@ h1 {
     font-size: clamp(1.875rem, 0.8036rem + 5.3571vw, 5.625rem);
     font-weight: 700;
     line-height: 1.15;
+    color: #f8f8f8;
 }
 h2 {
     font-size: clamp(2.25rem, 4vw + 1rem, 3.25rem);
@@ -103,9 +104,6 @@ a {
     text-decoration: none;
     transition: color 0.25s ease;
 }
-a:hover {
-    color: #0044cc;
-}
 button {
     font-size: clamp(1.125rem, 1.5vw + 0.25rem, 1.5rem);
     font-weight: 600;
@@ -122,12 +120,12 @@ button:hover {
 }
 
 label {
-    font-size: clamp(1rem, 1vw + 0.25rem, 1.25rem); /* ~16–20px */
+    font-size: clamp(1rem, 1vw + 0.25rem, 1.25rem);
     font-weight: 500;
 }
 
 input, textarea, select {
-    font-size: clamp(1.125rem, 1.5vw + 0.25rem, 1.375rem); /* ~18–22px */
+    font-size: clamp(1.125rem, 1.5vw + 0.25rem, 1.375rem);
     padding: 0.75em 1em;
     border: 1px solid #ccc;
     border-radius: 0.5em;
@@ -145,10 +143,10 @@ header{
     justify-content: space-between;
     padding: 1rem 2rem;
     height: 7rem;
-    /*position: sticky;*/
-    /*top: 0;*/
-    /*left: 0;*/
-    background-color: var(--white);
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #f8f8f8;
     width: 100%;
     z-index: 999;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -171,7 +169,7 @@ header div a {
 header nav menu {
     list-style: none;
     display: flex;
-    gap: 3rem;
+    gap: 2.5rem;
     margin: 0;
     padding: 0;
     font-size: 1.2rem;
@@ -185,9 +183,102 @@ header nav menu li a:hover {
 #mobile-menu {
     display: none;
 }
+.btn{
+    padding: 1rem 2rem;
+    background: #a39e9e;
+    color: #f8f8f8;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;}
+.btn:hover{
+    background: #959292;
+    transform: translateY(-2px);
+}
 
 /*---------------------------------------------------------Footer-----------------------------------------------------*/
 /*--------------------------------------------------------Home-Page---------------------------------------------------*/
+.home-hero{
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("../img/hero_bg.jpg") no-repeat center/cover fixed;
+}
+.hero-buttons-container{
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+}
+.home-hero{
+    color: #f8f8f8;
+}
+.how-it-works{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 10rem 2rem;
+}
+.how-it-works img{
+    width: 100%;
+    height: auto;
+}
+.steps{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    justify-content: center;
+}
+.steps p{
+    padding: 1.5rem 0;
+}
+.steps li {
+    width: 40ch;
+    text-align: center;
+    background-color: #f8f8f8;
+    padding: 3rem;
+    margin: 2rem 2rem;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 3px 8px;
+}
+.recently-found{
+    background-color: #a39e9e;
+    padding: 6rem 0;
+}
+.recently-found h2{
+    text-align: center;
+}
+.recently-found-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 4rem;
+    justify-items: center;
+}
+.card{
+    width: 40ch;
+    text-align: center;
+    background-color: #f8f8f8;
+    padding: 3rem;
+    margin: 2rem 2rem;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 3px 8px;
+}
+
+
 /*--------------------------------------------------------About-Page--------------------------------------------------*/
 /*-------------------------------------------------------Contact-Page-------------------------------------------------*/
 /*---------------------------------------------------------Shop-Page--------------------------------------------------*/
