@@ -184,7 +184,7 @@ header nav menu li a:hover {
     display: none;
 }
 .btn{
-    padding: 1rem 2rem;
+    padding: 0.5rem 1rem;
     background: #a39e9e;
     color: #f8f8f8;
     border: none;
@@ -192,7 +192,9 @@ header nav menu li a:hover {
     font-weight: bold;
     border-radius: 10px;
     cursor: pointer;
-    transition: background 0.3s, transform 0.2s;}
+    transition: background 0.3s, transform 0.2s;
+    margin-top: 1rem;
+}
 .btn:hover{
     background: #959292;
     transform: translateY(-2px);
@@ -259,23 +261,54 @@ header nav menu li a:hover {
     text-align: center;
 }
 .recently-found-container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin: 4rem;
-    justify-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .card{
     width: 40ch;
     text-align: center;
     background-color: #f8f8f8;
-    padding: 3rem;
-    margin: 2rem 2rem;
+    padding: 2rem;
+    margin: 2rem 1rem;
     border-radius: 1.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     box-shadow: rgba(0, 0, 0, 0.3) 0 3px 8px;
+}
+.card img{
+    width: auto;
+    height: 150px;
+    border-radius: 20px;
+}
+
+.categories-container{
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    flex-wrap: wrap;
+    padding: 1rem 3rem;
+}
+.categories-item{
+    height: 200px;
+    width: 350px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+.categories-item:hover{
+    transform: scale(1.1);
+    transition: .3s ease-in-out;
+}
+.categories{
+    padding: 6rem 0;
+}
+.categories h2{
+    text-align: center;
 }
 
 

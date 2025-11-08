@@ -39,42 +39,42 @@
                 <h2>Recently Found Items</h2>
                 <div class="recently-found-container">
                     <article class="card">
-                        <img src="#" alt="#" />
+                        <img src="./img/backpack.jpg" alt="backpack" />
                         <h3>Item Name</h3>
                         <p>Found: Library – Oct 28</p>
                         <p>Front pocket contains a notebook. Describe logo to claim.</p>
                         <a class="btn" href="#">Details</a>
                     </article>
                     <article class="card">
-                        <img src="#" alt="#" />
+                        <img src="./img/car_keys.jpg" alt="car keys" />
                         <h3>Item Name</h3>
                         <p>Found: Library – Oct 28</p>
                         <p>Front pocket contains a notebook. Describe logo to claim.</p>
                         <a class="btn" href="#">Details</a>
                     </article>
                     <article class="card">
-                        <img src="#" alt="#" />
+                        <img src="./img/backpack.jpg" alt="backpack" />
                         <h3>Item Name</h3>
                         <p>Found: Library – Oct 28</p>
                         <p>Front pocket contains a notebook. Describe logo to claim.</p>
                         <a class="btn" href="#">Details</a>
                     </article>
                     <article class="card">
-                        <img src="#" alt="#" />
+                        <img src="./img/car_keys.jpg" alt="car keys" />
                         <h3>Item Name</h3>
                         <p>Found: Library – Oct 28</p>
                         <p>Front pocket contains a notebook. Describe logo to claim.</p>
                         <a class="btn" href="#">Details</a>
                     </article>
                     <article class="card">
-                        <img src="#" alt="#" />
+                        <img src="./img/backpack.jpg" alt="backpack" />
                         <h3>Item Name</h3>
                         <p>Found: Library – Oct 28</p>
                         <p>Front pocket contains a notebook. Describe logo to claim.</p>
                         <a class="btn" href="#">Details</a>
                     </article>
                     <article class="card">
-                        <img src="#" alt="#" />
+                        <img src="./img/car_keys.jpg" alt="car keys" />
                         <h3>Item Name</h3>
                         <p>Found: Library – Oct 28</p>
                         <p>Front pocket contains a notebook. Describe logo to claim.</p>
@@ -85,40 +85,35 @@
             <section class="categories">
                 <h2>Browse by category</h2>
                 <div class="categories-container">
-                    <a href="found_items.php?category=electronics">
+                    <a class="categories-item" href="found_items.php?category=electronics">
                         <h3>Electronics</h3>
-                        <img src="#" alt="cate"/>
+                        <img src="./img/icons8-electronics-96.png" alt="category for electronics"/>
                     </a>
-                    <a href="found_items.php?category=bags">
+                    <a class="categories-item" href="found_items.php?category=bags">
                         <h3>Bags</h3>
-                        <img src="#" alt="category for bags"/>
+                        <img src="./img/icons8-backpack-96.png" alt="category for bags"/>
                     </a>
-                    <a href="found_items.php?category=keys">
+                    <a class="categories-item" href="found_items.php?category=keys">
                         <h3>Keys</h3>
-                        <img src="#" alt="category for keys"/>
+                        <img src="./img/icons8-keys-96.png" alt="category for keys"/>
                     </a>
-                    <a href="found_items.php?category=ids">
+                    <a class="categories-item" href="found_items.php?category=ids">
                         <h3>IDs</h3>
-                        <img src="#" alt="category for ids"/>
+                        <img src="./img/icons8-id-96.png" alt="category for ids"/>
                     </a>
-                    <a href="found_items.php?category=clothing_jewelry">
-                        <h3>Clothing & Jewelry</h3>
-                        <img src="#" alt="category for clothing and jewelry"/>
+                    <a class="categories-item" href="found_items.php?category=clothing">
+                        <h3>Clothing</h3>
+                        <img src="./img/icons8-jacket-96.png" alt="category for clothing"/>
                     </a>
-                    <a href="found_items.php?category=other">
+                    <a class="categories-item" href="found_items.php?category=jewelry">
+                        <h3>Jewelry</h3>
+                        <img src="./img/icons8-jewelry-96.png" alt="category for jewelry"/>
+                    </a>
+                    <a class="categories-item" href="found_items.php?category=other">
                         <h3>Other</h3>
-                        <img src="#" alt="category for other items"/>
+                        <img src="./img/icons8-other-96.png" alt="category for other items"/>
                     </a>
                 </div>
-                <nav class="categories-nav">
-                    <a href="found_items.php?category=electronics" class="categories-link">Electronics</a>
-                    <a href="found_items.php?category=bags" class="pill">Bags</a>
-                    <a href="found_items.php?category=keys" class="pill">Keys</a>
-                    <a href="found_items.php?category=ids" class="pill">IDs</a>
-                    <a href="found_items.php?category=clothing" class="pill">Clothing</a>
-                    <a href="found_items.php?category=jewelry" class="pill">Jewelry</a>
-                    <a href="found_items.php?category=other" class="pill">Other</a>
-                </nav>
             </section>
             <?php
             require './templates/misplaced_cta.php'
