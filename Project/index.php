@@ -17,68 +17,90 @@
                 </div>
             </section>
             <section class="how-it-works">
-                <h2>How it Works</h2>
+                <div>
+                    <h2>How it Works</h2>
+                    <p>Three simple steps to reunite with your belongings</p>
+                </div>
                 <ol class="steps">
                     <li>
-                        <h3>1. Report</h3>
+                        <img src="./img/Report%20Icon.png" alt="Report icon">
+                        <h3>Report</h3>
                         <p>Lost something? Submit a report with what, where, and when.</p>
-                        <a class="btn btn-tiny" href="report-lost.php">Report a Lost Item</a>
+                        <a class="btn btn-tiny" href="report-lost.php">Report Now</a>
                     </li>
                     <li>
-                        <h3>2. Review</h3>
+                        <img src="./img/Search%20Icon%2050.png" alt="Review icon">
+                        <h3>Review</h3>
                         <p>Our staff reviews reports and posts verified found items daily.</p>
+                        <a class="btn btn--tiny" href="claim.php">Browse Items</a>
                     </li>
                     <li>
-                        <h3>3. Reclaim</h3>
+                        <img src="./img/Checkmark%20Icon%2050.png" alt="Reclaim icon">
+                        <h3>Reclaim</h3>
                         <p>Think you see your item? Visit the listing and use the Claim page to provide proof.</p>
-                        <a class="btn btn--tiny" href="claim.php">Submit a Claim</a>
+                        <a class="btn btn--tiny" href="claim.php">Reclaim</a>
                     </li>
                 </ol>
             </section>
             <section class="recently-found">
-                <h2>Recently Found Items</h2>
+                <div class="recently-found-header">
+                    <h2>Recently Found Items</h2>
+                    <p>Browse the latest items waiting to be reunited with their owners</p>
+                </div>
                 <div class="recently-found-container">
                     <article class="card">
-                        <img src="./img/backpack.jpg" alt="backpack" />
-                        <h3>Item Name</h3>
-                        <p>Found: Library – Oct 28</p>
-                        <p>Front pocket contains a notebook. Describe logo to claim.</p>
-                        <a class="btn" href="#">Details</a>
+                        <img src="./img/backpack.jpg" alt="backpack"/>
+                        <div>
+                            <h3>Item Name</h3>
+                            <p>Found: Library – Oct 28</p>
+                            <p>Front pocket contains a notebook. Describe logo to claim.</p>
+                            <a class="btn" href="#">View Details</a>
+                        </div>
                     </article>
                     <article class="card">
                         <img src="./img/car_keys.jpg" alt="car keys" />
-                        <h3>Item Name</h3>
-                        <p>Found: Library – Oct 28</p>
-                        <p>Front pocket contains a notebook. Describe logo to claim.</p>
-                        <a class="btn" href="#">Details</a>
+                        <div>
+                            <h3>Item Name</h3>
+                            <p>Found: Library – Oct 28</p>
+                            <p>Front pocket contains a notebook. Describe logo to claim.</p>
+                            <a class="btn" href="#">View Details</a>
+                        </div>
                     </article>
                     <article class="card">
                         <img src="./img/backpack.jpg" alt="backpack" />
-                        <h3>Item Name</h3>
-                        <p>Found: Library – Oct 28</p>
-                        <p>Front pocket contains a notebook. Describe logo to claim.</p>
-                        <a class="btn" href="#">Details</a>
+                        <div>
+                            <h3>Item Name</h3>
+                            <p>Found: Library – Oct 28</p>
+                            <p>Front pocket contains a notebook. Describe logo to claim.</p>
+                            <a class="btn" href="#">View Details</a>
+                        </div>
                     </article>
                     <article class="card">
                         <img src="./img/car_keys.jpg" alt="car keys" />
-                        <h3>Item Name</h3>
-                        <p>Found: Library – Oct 28</p>
-                        <p>Front pocket contains a notebook. Describe logo to claim.</p>
-                        <a class="btn" href="#">Details</a>
+                        <div>
+                            <h3>Item Name</h3>
+                            <p>Found: Library – Oct 28</p>
+                            <p>Front pocket contains a notebook. Describe logo to claim.</p>
+                            <a class="btn" href="#">View Details</a>
+                        </div>
                     </article>
                     <article class="card">
                         <img src="./img/backpack.jpg" alt="backpack" />
-                        <h3>Item Name</h3>
-                        <p>Found: Library – Oct 28</p>
-                        <p>Front pocket contains a notebook. Describe logo to claim.</p>
-                        <a class="btn" href="#">Details</a>
+                        <div>
+                            <h3>Item Name</h3>
+                            <p>Found: Library – Oct 28</p>
+                            <p>Front pocket contains a notebook. Describe logo to claim.</p>
+                            <a class="btn" href="#">View Details</a>
+                        </div>
                     </article>
                     <article class="card">
                         <img src="./img/car_keys.jpg" alt="car keys" />
-                        <h3>Item Name</h3>
-                        <p>Found: Library – Oct 28</p>
-                        <p>Front pocket contains a notebook. Describe logo to claim.</p>
-                        <a class="btn" href="#">Details</a>
+                        <div>
+                            <h3>Item Name</h3>
+                            <p>Found: Library – Oct 28</p>
+                            <p>Front pocket contains a notebook. Describe logo to claim.</p>
+                            <a class="btn" href="#">View Details</a>
+                        </div>
                     </article>
                 </div>
             </section>
@@ -116,29 +138,7 @@
                 </div>
             </section>
             <?php
-            require './templates/misplaced_cta.php'
-            ?>
-            <section class="trust">
-                <h2>Verification & privacy</h2>
-                <div class="trust-container">
-                    <article>
-                        <h3>Proof that protects you</h3>
-                        <p>We never ask for passwords or unlock codes. Ownership is confirmed with non-sensitive details like serial numbers, distinct marks, or case color combinations.</p>
-                    </article>
-                    <article>
-                        <h3>Admin-verified listings</h3>
-                        <p>Only staff can post “Found” items to keep listings accurate and reduce spam.</p>
-                    </article>
-                    <article>
-                        <h3>Private contact</h3>
-                        <p>Your contact info from lost reports is used solely for matching and is not displayed publicly.</p>
-                    </article>
-                </div>
-            </section>
-            <?php
-            require './templates/dropoff_cta.php'
-            ?>
-<?php
+            require './templates/misplaced_cta.php';
     // adding the footer
     require './templates/footer.php';
 ?>
