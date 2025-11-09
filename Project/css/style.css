@@ -132,7 +132,7 @@ input, textarea, select {
     font-size: clamp(1.125rem, 1.5vw + 0.25rem, 1.375rem);
     padding: 0.75em 1em;
     border: 1px solid #ccc;
-    border-radius: 0.5em;
+    border-radius: 0.5rem;
     width: 100%;
     box-sizing: border-box;
 }
@@ -202,6 +202,9 @@ header nav menu li a:hover {
 .btn:hover{
     background: #959292;
     transform: translateY(-2px);
+}
+.bold{
+    font-weight: bold;
 }
 
 /*---------------------------------------------------------Footer-----------------------------------------------------*/
@@ -437,6 +440,30 @@ footer{
 
 
 /*-------------------------------------------------------Contact-Page-------------------------------------------------*/
+.contact-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 5rem;
+    gap: 2rem;
+}
+.contact-card{
+    box-shadow: rgba(149, 157, 165, 0.3) 0 10px 20px;
+    padding: 3rem;
+    border-radius: 20px;
+}
+.faq{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 3rem 10rem;
+    margin-bottom: 4rem;
+}
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
 /*-----------------------------------------------------Found-Items-Page-----------------------------------------------*/
 .found-items div:nth-child(1){
     display: flex;
