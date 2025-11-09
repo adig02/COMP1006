@@ -27,8 +27,8 @@
             <nav>
                 <menu>
                     <li><a href="./index.php">Home</a></li>
-                    <li><a href="./shop.php">Items Found</a></li>
-                    <li><a href="./shop.php">Submit Lost Item</a></li>
+                    <li><a href="./found_items.php">Browse Found Items</a></li>
+                    <li><a href="./report_lost.php">Report Lost Item</a></li>
                     <li><a href="./about.php">About</a></li>
                     <li><a href="./contact.php">Contact</a></li>
                     <li><a href="./login.php">Login</a></li>

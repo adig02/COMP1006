@@ -1,7 +1,7 @@
 <?php
 // setting the custom metadata
 $pageTitle = "Reclaim | Found Items";
-$pageDesc = "SHOP PAGE DESCRIPTION";
+$pageDesc = "Browse verified found items currently held by the Lost & Found office.";
 
 // include required files
 
@@ -18,7 +18,7 @@ require './templates/header.php';
             </section>
             <section class="tips-report"></section>
             <section class="search-found">
-                <form>
+                <form method="post" enctype="multipart/form-data">
                     <div>
                         <input type="search" placeholder="Search item name or description">
                         <select>

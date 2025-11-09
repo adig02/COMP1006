@@ -12,8 +12,8 @@
                 <h1>Reclaim</h1>
                 <p>A smarter way to manage lost and found.</p>
                 <div class="hero-buttons-container">
-                    <a class="btn hero-btn" href="#">Report a Lost Item</a>
-                    <a class="btn hero-btn" href="#">Browse Found Items</a>
+                    <a class="btn hero-btn" href="report_lost.php">Report a Lost Item</a>
+                    <a class="btn hero-btn" href="found_items.php">Browse Found Items</a>
                 </div>
             </section>
             <section class="how-it-works">
