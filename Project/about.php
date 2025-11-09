@@ -7,137 +7,90 @@ $pageDesc = "Reclaim helps institutions securely manage lost and found items, re
 require './templates/header.php';
 ?>
             <!-- HERO / INTRO -->
-            <section class="about-hero" aria-labelledby="about-title">
-                <h1 id="about-title">About Reclaim</h1>
-                <p class="lead">
-                    Reclaim is a modern lost & found management system that helps institutions, campuses,
-                    and organizations reconnect people with their belongings—securely and efficiently.
-                </p>
+            <section class="about-hero">
+                <h1>About Reclaim</h1>
+                <p>Reclaim is a modern lost & found management system that helps institutions, campuses, and organizations reconnect people with their belongings—securely and efficiently.</p>
             </section>
-
             <!-- OUR STORY -->
-            <section class="about-story" aria-labelledby="story-title">
-                <h2 id="story-title">Our Story</h2>
-                <p>
-                    The idea behind Reclaim started from a simple observation: lost items often stay lost
-                    because there isn’t an easy way to report, track, and reunite them. Handwritten logs and
-                    cluttered bulletin boards are inefficient and outdated. We set out to create a simple,
-                    centralized web portal that allows staff to manage found items, and users to quickly report
-                    what they’ve lost.
-                </p>
-                <p>
-                    What began as a student project has evolved into a flexible platform that any organization
-                    can use to simplify their lost and found process. Reclaim was built with accessibility,
-                    transparency, and user trust in mind—values that guide every line of code.
-                </p>
+            <section class="about-story">
+                <div class="about-story-txt">
+                    <h2>Our Story</h2>
+                    <p>Reclaim began as a student project, born from the frustration of losing items on campus and the complicated process of getting them back. We noticed how outdated systems made it difficult for both students and staff to efficiently manage lost and found items.</p>
+                    <p>What started as a simple solution for our university has evolved into a comprehensive platform that serves institutions nationwide. We've streamlined the entire process, making it easier than ever for people to report lost items and for administrators to manage returns.</p>
+                    <p>Today, Reclaim helps thousands of people reconnect with their belongings every month, transforming what was once a tedious process into a seamless experience.</p>
+                </div>
+                <img src="./img/about-us-img.jpg" alt="about us img">
             </section>
-
             <!-- OUR MISSION -->
-            <section class="about-mission" aria-labelledby="mission-title">
-                <h2 id="mission-title">Our Mission</h2>
-                <p>
-                    Our mission is to make it easy for people and property to find their way back to each other.
-                    We believe every misplaced item deserves a fair chance of being returned—and that technology
-                    should make this process faster, not harder.
-                </p>
-
-                <blockquote>
-                    “Helping people and property find their way back.”
-                    <footer>— The Reclaim Team</footer>
-                </blockquote>
+            <section class="about-mission">
+                <h2>Our Mission</h2>
+                <p>"To make it easy for people and property to find their way back to each other. We believe every misplaced item deserves a fair chance of being returned—and that technology should make this process faster, not harder."</p>
             </section>
-
-            <!-- HOW IT WORKS (HIGH LEVEL OVERVIEW) -->
-            <section class="about-process" aria-labelledby="process-title">
-                <h2 id="process-title">How Reclaim Works</h2>
+            <section class="how-it-works">
+                <div>
+                    <h2>How it Works</h2>
+                    <p>Three simple steps to reunite with your belongings</p>
+                </div>
                 <ol class="steps">
                     <li>
-                        <h3>1. Report</h3>
-                        <p>
-                            Users who’ve lost an item can quickly submit a report, describing what was lost, when, and where.
-                            Each submission helps the admin team cross-check with found items.
-                        </p>
+                        <img src="./img/Report%20Icon.png" alt="Report icon">
+                        <h3>Report</h3>
+                        <p>Lost something? Submit a report with what, where, and when.</p>
+                        <a class="btn btn-tiny" href="report-lost.php">Report Now</a>
                     </li>
                     <li>
-                        <h3>2. Review</h3>
-                        <p>
-                            The admin team verifies new found items, adds clear photos, and ensures every listing meets privacy
-                            and accuracy standards.
-                        </p>
+                        <img src="./img/Search%20Icon%2050.png" alt="Review icon">
+                        <h3>Review</h3>
+                        <p>Our staff reviews reports and posts verified found items daily.</p>
+                        <a class="btn btn--tiny" href="claim.php">Browse Items</a>
                     </li>
                     <li>
-                        <h3>3. Reconnect</h3>
-                        <p>
-                            When a potential match is identified, staff reach out to confirm ownership using non-sensitive
-                            proof,
-                            such as serial numbers or unique markings.
-                        </p>
+                        <img src="./img/Checkmark%20Icon%2050.png" alt="Reclaim icon">
+                        <h3>Reclaim</h3>
+                        <p>Think you see your item? Visit the listing and use the Claim page to provide proof.</p>
+                        <a class="btn btn--tiny" href="claim.php">Reclaim</a>
                     </li>
                 </ol>
             </section>
-
             <!-- CORE VALUES -->
-            <section class="about-values" aria-labelledby="values-title">
-                <h2 id="values-title">Our Core Values</h2>
+            <section class="about-values">
+                <div>
+                    <h2>Our Core Values</h2>
+                    <p>The principles that guide everything we do</p>
+                </div>
                 <div class="values-grid">
                     <article>
+                        <div class="icon-container">
+                            <i class="fa-solid fa-exclamation fa-2x"></i>
+                        </div>
                         <h3>Integrity</h3>
-                        <p>
-                            Every listing is verified and posted by an authorized admin, ensuring accuracy, fairness,
-                            and accountability throughout the process.
-                        </p>
+                        <p>Every listing is verified and posted by an authorized admin, ensuring accuracy, fairness, and accountability throughout the process.</p>
                     </article>
                     <article>
+                        <div class="icon-container">
+                            <i class="fa-solid fa-lock fa-2x"></i>
+                        </div>
                         <h3>Privacy</h3>
-                        <p>
-                            User contact information is never made public. Reclaim only collects what’s necessary to verify
-                            ownership
-                            and coordinate safe returns.
+                        <p>User contact information is never made public. Reclaim only collects what’s necessary to verify ownership and coordinate safe returns.
                         </p>
                     </article>
                     <article>
+                        <div class="icon-container">
+                            <i class="fa-solid fa-person fa-2x"></i>
+                        </div>
                         <h3>Accessibility</h3>
-                        <p>
-                            Our simple interface is designed for everyone—no login required for reporting lost items,
-                            and full mobile support for convenient access on the go.
+                        <p>Our simple interface is designed for everyone—no login required for reporting lost items, and full mobile support for convenient access on the go.
                         </p>
                     </article>
                     <article>
+                        <div class="icon-container">
+                            <i class="fa-solid fa-handshake fa-2x"></i>
+                        </div>
                         <h3>Trust</h3>
-                        <p>
-                            Each verified return strengthens our connection with the community.
-                            Reclaim builds confidence through consistency and transparency.
+                        <p>Each verified return strengthens our connection with the community. Reclaim builds confidence through consistency and transparency.
                         </p>
                     </article>
                 </div>
-            </section>
-
-            <!-- TECHNOLOGY & SECURITY -->
-            <section class="about-tech" aria-labelledby="tech-title">
-                <h2 id="tech-title">Technology & Security</h2>
-                <p>
-                    Reclaim is built using secure web technologies including PHP, PDO (for safe database connections),
-                    and modern HTML5/CSS3 standards. All forms include input validation, and file uploads are filtered
-                    by type and size to prevent misuse.
-                </p>
-                <p>
-                    Every action by admins or users is protected by server-side validation, ensuring
-                    that the platform remains safe and reliable.
-                </p>
-            </section>
-
-            <!-- CAMPUS EDITION NOTE -->
-            <section class="about-campus" aria-labelledby="campus-title">
-                <h2 id="campus-title">Reclaim: Campus Edition</h2>
-                <p>
-                    The current version of Reclaim has been customized for campus use.
-                    It allows students and staff to report lost items online and check a live feed
-                    of recently found belongings across the college grounds.
-                </p>
-                <p>
-                    Future versions of Reclaim will include multi-campus management and advanced
-                    matching automation for larger institutions.
-                </p>
             </section>
 <?php
 // adding the cta

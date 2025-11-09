@@ -48,7 +48,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*-------------------------------------------------General Website Styling--------------------------------------------*/
-
+:root{
+    --light-blue: #eff6ff;
+    --black: #1E1E1E;
+    --icon-container-bg: rgb(219 234 254);
+}
 html {
     font-size: 16px; /* baseline for rem */
 }
@@ -70,6 +74,7 @@ h2 {
     font-size: clamp(2.25rem, 4vw + 1rem, 3.25rem);
     font-weight: 600;
     line-height: 1.25;
+    padding-bottom: 1rem;
 }
 h3 {
     font-size: clamp(1.75rem, 3vw + 0.75rem, 2.5rem);
@@ -350,6 +355,86 @@ footer{
 }
 
 /*--------------------------------------------------------About-Page--------------------------------------------------*/
+.about-hero{
+    text-align: center;
+    padding: 6rem 16rem;
+    background-color: var(--light-blue);
+}
+.about-hero h1{
+    color: var(--black);
+    padding-bottom: 1rem;
+}
+.about-story{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 6rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+.about-story img{
+    width: 70%;
+    height: auto;
+    justify-self: end;
+    align-self: center;
+    border-radius: 20px;
+    margin-right: 2rem;
+    box-shadow: rgba(149, 157, 165, 0.3) 0 10px 20px;
+}
+.about-story-txt p{
+    padding-top: 1.5rem;
+}
+.about-mission{
+    padding: 6rem 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about-mission p{
+    padding: 3rem;
+    max-width: 75ch;
+    border-radius: 20px;
+    box-shadow: rgba(149, 157, 165, 0.3) 0 10px 20px;
+    margin-top: 2rem;
+    font-weight: bold;
+}
+.about-values{
+    padding: 10rem 2rem;
+}
+.about-values div:nth-child(1){
+    text-align: center;
+}
+.values-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 3rem 4rem;
+    gap: 5rem;
+}
+.values-grid article{
+    background-color: rgb(248 249 250);
+    padding: 2rem;
+    min-height: 410px;
+    border-radius: 20px;
+    box-shadow: rgba(149, 157, 165, 0.3) 0 10px 20px;
+}
+.values-grid p{
+    font-size: 1.1rem;
+    padding-top: 1rem;
+}
+.values-grid h3{
+    font-size: 1.5rem;
+}
+.icon-container{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--icon-container-bg);
+    border-radius: 13px;
+    margin-bottom: 1rem;
+}
 /*-------------------------------------------------------Contact-Page-------------------------------------------------*/
 /*---------------------------------------------------------Shop-Page--------------------------------------------------*/
 /*-------------------------------------------------------Register-Page------------------------------------------------*/
