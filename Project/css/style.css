@@ -74,7 +74,6 @@ h2 {
     font-size: clamp(2.25rem, 4vw + 1rem, 3.25rem);
     font-weight: 600;
     line-height: 1.25;
-    padding-bottom: 1rem;
 }
 h3 {
     font-size: clamp(1.75rem, 3vw + 0.75rem, 2.5rem);
@@ -344,10 +343,10 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #38bdf8;
+    background-color: var(--light-blue);
     align-items: center;
     gap: 1rem;
-    color: #f8f8f8;
+    color: var(--black);
 }
 .cta p{
     max-width: 50ch;
@@ -355,7 +354,7 @@ footer{
 }
 
 /*--------------------------------------------------------About-Page--------------------------------------------------*/
-.about-hero{
+.hero-template{
     text-align: center;
     padding: 6rem 16rem;
     background-color: var(--light-blue);
@@ -435,8 +434,38 @@ footer{
     border-radius: 13px;
     margin-bottom: 1rem;
 }
+
+
 /*-------------------------------------------------------Contact-Page-------------------------------------------------*/
-/*---------------------------------------------------------Shop-Page--------------------------------------------------*/
+/*-----------------------------------------------------Found-Items-Page-----------------------------------------------*/
+.found-items div:nth-child(1){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.found-items-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    margin: 3rem;
+}
+.search-found form{
+    padding: 6rem;
+    box-shadow: rgba(149, 157, 165, 0.3) 0 10px 20px;
+    border-radius: 20px;
+    margin: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.search-found form div:nth-child(1){
+    display: flex;
+    gap: 2rem;
+}
+
+
+
 /*-------------------------------------------------------Register-Page------------------------------------------------*/
 
 

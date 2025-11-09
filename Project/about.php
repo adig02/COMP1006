@@ -7,8 +7,8 @@ $pageDesc = "Reclaim helps institutions securely manage lost and found items, re
 require './templates/header.php';
 ?>
             <!-- HERO / INTRO -->
-            <section class="about-hero">
-                <h1>About Reclaim</h1>
+            <section class="hero-template">
+                <h2>About Reclaim</h2>
                 <p>Reclaim is a modern lost & found management system that helps institutions, campuses, and organizations reconnect people with their belongings—securely and efficiently.</p>
             </section>
             <!-- OUR STORY -->
