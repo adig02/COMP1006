@@ -53,6 +53,9 @@ h1, h2, h3, h4, h5, h6 {
     --black: #1E1E1E;
     --icon-container-bg: rgb(219 234 254);
     --white: #f8f8f8;
+    --box-shadow: rgba(149, 157, 165, 0.3) 0 10px 20px;
+    --card-bg: rgb(248 249 250);
+    --border-radius: 20px;
 }
 html {
     font-size: 16px; /* baseline for rem */
@@ -61,7 +64,7 @@ html {
 body {
     font-family: 'Inter', sans-serif;
     line-height: 1.7;
-    color: #222;
+    color: var(--black);
 }
 
 /* Headings */
@@ -69,7 +72,7 @@ h1 {
     font-size: clamp(1.875rem, 0.8036rem + 5.3571vw, 5.625rem);
     font-weight: 700;
     line-height: 1.15;
-    color: #f8f8f8;
+    color: var(--white);
 }
 h2 {
     font-size: clamp(2.25rem, 4vw + 1rem, 3.25rem);
@@ -116,7 +119,7 @@ button {
     border-radius: 0.6em;
     border: none;
     background: #0077ff;
-    color: #fff;
+    color: var(--white);
     cursor: pointer;
     transition: background 0.25s ease;
 }
@@ -132,7 +135,7 @@ label {
 input, textarea, select {
     font-size: clamp(1.125rem, 1.5vw + 0.25rem, 1.375rem);
     padding: 0.75em 1em;
-    border: 1px solid #ccc;
+    border: 1px solid var(--white);
     border-radius: 0.5rem;
     width: 100%;
     box-sizing: border-box;
@@ -151,7 +154,7 @@ header{
     position: sticky;
     top: 0;
     left: 0;
-    background-color: #f8f8f8;
+    background-color: var(--white);
     width: 100%;
     z-index: 999;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -191,7 +194,7 @@ header nav menu li a:hover {
 .btn{
     padding: 0.5rem 1rem;
     background: #a39e9e;
-    color: #f8f8f8;
+    color: var(--white);
     border: none;
     font-size: 1.1rem;
     font-weight: bold;
@@ -211,7 +214,7 @@ header nav menu li a:hover {
 /*---------------------------------------------------------Footer-----------------------------------------------------*/
 footer{
     background-color: rgb(15 23 42);
-    color: #f8f8f8;
+    color: var(--white);
     display: flex;
     flex-direction: column;
     padding: 2rem 0;
@@ -230,7 +233,7 @@ footer{
     flex-direction: column;
 }
 .footer-quick-links a{
-    color: #f8f8f8;
+    color: var(--white);
 }
 
 /*--------------------------------------------------------Home-Page---------------------------------------------------*/
@@ -249,7 +252,7 @@ footer{
     gap: 1rem;
 }
 .home-hero{
-    color: #f8f8f8;
+    color: var(--white);
 }
 .how-it-works{
     display: flex;
@@ -258,7 +261,7 @@ footer{
     align-items: center;
     gap: 2rem;
     padding: 10rem 2rem;
-    background-color: rgb(248 249 250);
+    background-color: var(--card-bg);
 }
 .how-it-works div{
     text-align: center;
@@ -295,7 +298,7 @@ footer{
 .card{
     width: 50ch;
     height: 500px;
-    background-color: rgb(248 249 250);
+    background-color: var(--card-bg);
     margin: 2rem 1rem;
     border-radius: 1.5rem;
     flex-direction: column;
@@ -307,7 +310,7 @@ footer{
 .card img{
     width: 100%;
     height: 100%;
-    border-radius: 20px;
+    border-radius: var(--border-radius);
     object-fit: cover;
 }
 .card div{
@@ -328,7 +331,7 @@ footer{
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-    border-radius: 20px;
+    border-radius: var(--border-radius);
 }
 .categories-item:hover{
     transform: scale(1.1);
@@ -379,9 +382,9 @@ footer{
     height: auto;
     justify-self: end;
     align-self: center;
-    border-radius: 20px;
+    border-radius: var(--border-radius);
     margin-right: 2rem;
-    box-shadow: rgba(149, 157, 165, 0.3) 0 10px 20px;
+    box-shadow: var(--box-shadow);
 }
 .about-story-txt p{
     padding-top: 1.5rem;
@@ -397,8 +400,8 @@ footer{
 .about-mission p{
     padding: 3rem;
     max-width: 75ch;
-    border-radius: 20px;
-    box-shadow: rgba(149, 157, 165, 0.3) 0 10px 20px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
     margin-top: 2rem;
     font-weight: bold;
 }
@@ -415,11 +418,11 @@ footer{
     gap: 5rem;
 }
 .values-grid article{
-    background-color: rgb(248 249 250);
+    background-color: var(--card-bg);
     padding: 2rem;
     min-height: 410px;
-    border-radius: 20px;
-    box-shadow: rgba(149, 157, 165, 0.3) 0 10px 20px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
 }
 .values-grid p{
     font-size: 1.1rem;
@@ -448,9 +451,9 @@ footer{
     gap: 2rem;
 }
 .contact-card{
-    box-shadow: rgba(149, 157, 165, 0.3) 0 10px 20px;
+    box-shadow: var(--box-shadow);
     padding: 3rem;
-    border-radius: 20px;
+    border-radius: var(--border-radius);
 }
 .faq{
     text-align: center;
@@ -480,8 +483,8 @@ footer{
 }
 .search-found form{
     padding: 6rem;
-    box-shadow: rgba(149, 157, 165, 0.3) 0 10px 20px;
-    border-radius: 20px;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
     margin: 4rem;
     display: flex;
     flex-direction: column;
