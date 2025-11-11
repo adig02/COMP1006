@@ -56,6 +56,8 @@ h1, h2, h3, h4, h5, h6 {
     --box-shadow: rgba(149, 157, 165, 0.3) 0 10px 20px;
     --card-bg: rgb(248 249 250);
     --border-radius: 20px;
+    --btn-blue: rgb(0 119 255);
+    --footer-text: rgb(156 163 175);
 }
 html {
     font-size: 16px; /* baseline for rem */
@@ -97,9 +99,10 @@ h5 {
 h6 {
     font-size: clamp(1.125rem, 1.5vw + 0.25rem, 1.5rem);
     font-weight: 500;
-    text-transform: uppercase;
     letter-spacing: 0.05em;
     line-height: 1.5;
+    color: var(--white);
+    padding-bottom: 0.5rem;
 }
 p {
     font-size: clamp(1.125rem, 1.5vw + 0.25rem, 1.375rem);
@@ -118,7 +121,7 @@ button {
     padding: 0.8em 1.5em;
     border-radius: 0.6em;
     border: none;
-    background: #0077ff;
+    background: var(--btn-blue);
     color: var(--white);
     cursor: pointer;
     transition: background 0.25s ease;
@@ -146,25 +149,24 @@ ol{
 
 /*---------------------------------------------------------Header-----------------------------------------------------*/
 header{
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+}
+.desktop-header{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1rem 2rem;
     height: 7rem;
-    position: sticky;
     top: 0;
     left: 0;
     background-color: var(--white);
-    width: 100%;
-    z-index: 999;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-header div{
-    height: 100%;
-}
-header div a {
-    height: 100%;
+.dsk-logo-container{
+    height: 4rem;
     display: flex;
     align-items: center;
 }
@@ -174,37 +176,39 @@ header div a {
     height: 100%;
 }
 
-header nav menu {
+.desktop-header nav menu {
     list-style: none;
     display: flex;
-    gap: 2.5rem;
+    gap: 2rem;
     margin: 0;
     padding: 0;
     font-size: 1.2rem;
 }
 
 header nav menu li a:hover {
-    font-weight: 500;
+    font-weight: 700;
     transition: font-weight 0.2s ease-in-out;
 }
 
-#mobile-menu {
+.mobile-menu {
     display: none;
 }
+
+
 .btn{
-    padding: 0.5rem 1rem;
-    background: #a39e9e;
+    padding: 1rem 2rem;
+    background: var(--btn-blue);
     color: var(--white);
     border: none;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: bold;
-    border-radius: 10px;
+    border-radius: 13px;
     cursor: pointer;
     transition: background 0.3s, transform 0.2s;
-    margin-top: 1rem;
+    box-shadow: var(--box-shadow);
 }
 .btn:hover{
-    background: #959292;
+    background: rgb(0, 99, 230);
     transform: translateY(-2px);
 }
 .bold{
@@ -214,29 +218,57 @@ header nav menu li a:hover {
 /*---------------------------------------------------------Footer-----------------------------------------------------*/
 footer{
     background-color: rgb(15 23 42);
-    color: var(--white);
+    color: var(--footer-text);
     display: flex;
     flex-direction: column;
-    padding: 2rem 0;
+    padding: 3rem 5rem;
     justify-content: center;
     align-items: center;
 }
 .footer-text{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 2rem;
-    text-align: center;
-    padding: 5rem;
+    padding: 2rem 0;
+    justify-items: center;
 }
 .footer-quick-links{
     display: flex;
     flex-direction: column;
 }
-.footer-quick-links a{
-    color: var(--white);
+footer a{
+    color: var(--footer-text);
+}
+.footer-copy{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.footer-copy div{
+    display: flex;
+    gap: 2rem;
+}
+.footer-socials{
+    padding-top: 1rem;
+}
+.footer-separator{
+    height: 1px;
+    width: 100%;
+    background-color: var(--footer-text);
+    margin-bottom: 2rem;
+}
+footer a, p{
+    font-size: 1rem;
+}
+.footer-contact{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 /*--------------------------------------------------------Home-Page---------------------------------------------------*/
+h1{
+    text-align: center;
+}
 .home-hero{
     min-height: 100vh;
     margin: 0;
@@ -251,6 +283,16 @@ footer{
     display: flex;
     gap: 1rem;
 }
+.hero-btn-2{
+    background-color: var(--white);
+    border: 3px solid var(--btn-blue);
+    color: var(--btn-blue);
+    padding-top: 13px;
+}
+.hero-btn-2:hover{
+    background-color: var(--btn-blue);
+    color: var(--white);
+}
 .home-hero{
     color: var(--white);
 }
@@ -260,7 +302,7 @@ footer{
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    padding: 10rem 2rem;
+    padding: 6rem 2rem;
     background-color: var(--card-bg);
 }
 .how-it-works div{
@@ -284,6 +326,14 @@ footer{
     align-items: center;
     justify-content: center;
 }
+.steps div a, .steps div i{
+    color: var(--btn-blue);
+}
+.steps div a:hover, .steps div i:hover{
+    color: rgb(0, 99, 230);
+    font-weight: bold;
+    transition: font-weight 0.2s ease-in-out;
+}
 .recently-found{
     padding: 6rem 0;
 }
@@ -291,30 +341,35 @@ footer{
     text-align: center;
 }
 .recently-found-container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1rem 3rem;
 }
 .card{
-    width: 50ch;
-    height: 500px;
     background-color: var(--card-bg);
-    margin: 2rem 1rem;
+    margin: 1rem;
     border-radius: 1.5rem;
     flex-direction: column;
-    justify-content: center;
     box-shadow: rgba(0, 0, 0, 0.3) 0 3px 8px;
-    display: grid;
-    grid-template-rows: 50% 50%;
+    display: flex;
+    justify-content: flex-start;
 }
 .card img{
-    width: 100%;
-    height: 100%;
-    border-radius: var(--border-radius);
+    width: auto;
+    height: 330px;
     object-fit: cover;
 }
-.card div{
+.card-content{
     margin: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+    height: 100%;
+}
+.card-content a{
+    margin-bottom: 0.75rem;
+    text-align: center;
 }
 
 .categories-container{
@@ -345,7 +400,7 @@ footer{
 }
 
 .cta{
-    padding: 5rem 2rem;
+    padding: 6rem 2rem;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -363,7 +418,7 @@ footer{
 /*--------------------------------------------------------About-Page--------------------------------------------------*/
 .hero-template{
     text-align: center;
-    padding: 6rem 16rem;
+    padding: 12rem 16rem 6rem 16rem;
     background-color: var(--light-blue);
 }
 .about-hero h1{
