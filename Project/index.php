@@ -9,11 +9,11 @@
     require './templates/header.php';
 ?>
             <section class="home-hero">
-                <h1>Reclaim</h1>
-                <p>A smarter way to manage lost and found.</p>
+                <h1>Helping people and property find their way back.</h1>
+                <p>A simple lost & found platform for campuses and institutions.</p>
                 <div class="hero-buttons-container">
                     <a class="btn hero-btn" href="report_lost.php">Report a Lost Item</a>
-                    <a class="btn hero-btn" href="found_items.php">Browse Found Items</a>
+                    <a class="btn hero-btn-2" href="found_items.php">Browse Found Items</a>
                 </div>
             </section>
             <section class="how-it-works">
@@ -26,19 +26,30 @@
                         <img src="./img/Report%20Icon.png" alt="Report icon">
                         <h3>Report</h3>
                         <p>Lost something? Submit a report with what, where, and when.</p>
-                        <a class="btn btn-tiny" href="report-lost.php">Report Now</a>
+                        <div>
+                            <a href="report-lost.php">Report Now</a>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                        
                     </li>
                     <li>
                         <img src="./img/Search%20Icon%2050.png" alt="Review icon">
                         <h3>Review</h3>
                         <p>Our staff reviews reports and posts verified found items daily.</p>
-                        <a class="btn btn--tiny" href="claim.php">Browse Items</a>
+                        <div>
+                            <a href="claim.php">Browse Items</a>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
                     </li>
                     <li>
                         <img src="./img/Checkmark%20Icon%2050.png" alt="Reclaim icon">
                         <h3>Reclaim</h3>
                         <p>Think you see your item? Visit the listing and use the Claim page to provide proof.</p>
-                        <a class="btn btn--tiny" href="claim.php">Reclaim</a>
+                        <div>
+                            <a href="claim.php">Reclaim</a>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                        
                     </li>
                 </ol>
             </section>
@@ -50,55 +61,67 @@
                 <div class="recently-found-container">
                     <article class="card">
                         <img src="./img/backpack.jpg" alt="backpack"/>
-                        <div>
-                            <h3>Item Name</h3>
-                            <p>Found: Library – Oct 28</p>
-                            <p>Front pocket contains a notebook. Describe logo to claim.</p>
+                        <div class="card-content">
+                            <div>
+                                <h3>Item Name</h3>
+                                <p>Found: Library – Oct 28</p>
+                                <p>Front pocket contains a notebook. Describe logo to claim. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, sit.</p>
+                            </div>
                             <a class="btn" href="#">View Details</a>
                         </div>
                     </article>
                     <article class="card">
                         <img src="./img/car_keys.jpg" alt="car keys" />
-                        <div>
-                            <h3>Item Name</h3>
-                            <p>Found: Library – Oct 28</p>
-                            <p>Front pocket contains a notebook. Describe logo to claim.</p>
+                        <div class="card-content">
+                            <div>
+                                <h3>Item Name</h3>
+                                <p>Found: Library – Oct 28</p>
+                                <p>Front pocket contains a notebook. Describe logo to claim. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, sit.</p>
+                            </div>
                             <a class="btn" href="#">View Details</a>
                         </div>
                     </article>
                     <article class="card">
                         <img src="./img/backpack.jpg" alt="backpack" />
-                        <div>
-                            <h3>Item Name</h3>
-                            <p>Found: Library – Oct 28</p>
-                            <p>Front pocket contains a notebook. Describe logo to claim.</p>
+                        <div class="card-content">
+                            <div>
+                                <h3>Item Name</h3>
+                                <p>Found: Library – Oct 28</p>
+                                <p>Front pocket contains a notebook. Describe logo to claim. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, sit.</p>
+                            </div>
                             <a class="btn" href="#">View Details</a>
                         </div>
                     </article>
                     <article class="card">
                         <img src="./img/car_keys.jpg" alt="car keys" />
-                        <div>
-                            <h3>Item Name</h3>
-                            <p>Found: Library – Oct 28</p>
-                            <p>Front pocket contains a notebook. Describe logo to claim.</p>
+                        <div class="card-content">
+                            <div>
+                                <h3>Item Name</h3>
+                                <p>Found: Library – Oct 28</p>
+                                <p>Front pocket contains a notebook. Describe logo to claim. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, sit.</p>
+                            </div>
                             <a class="btn" href="#">View Details</a>
                         </div>
                     </article>
                     <article class="card">
                         <img src="./img/backpack.jpg" alt="backpack" />
-                        <div>
-                            <h3>Item Name</h3>
-                            <p>Found: Library – Oct 28</p>
-                            <p>Front pocket contains a notebook. Describe logo to claim.</p>
+                        <div class="card-content">
+                            <div>
+                                <h3>Item Name</h3>
+                                <p>Found: Library – Oct 28</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet expedita numquam pariatur temporibus? Ab accusamus alias aspernatur beatae consectetur cum cumque</p>
+                            </div>
                             <a class="btn" href="#">View Details</a>
                         </div>
                     </article>
                     <article class="card">
                         <img src="./img/car_keys.jpg" alt="car keys" />
-                        <div>
-                            <h3>Item Name</h3>
-                            <p>Found: Library – Oct 28</p>
-                            <p>Front pocket contains a notebook. Describe logo to claim.</p>
+                        <div class="card-content">
+                            <div>
+                                <h3>Item Name</h3>
+                                <p>Found: Library – Oct 28</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur dolorum nesciunt officia quam quidem quo velit. Beatae hic laboriosam neque.</p>
+                            </div>
                             <a class="btn" href="#">View Details</a>
                         </div>
                     </article>
