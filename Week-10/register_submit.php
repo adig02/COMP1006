@@ -2,6 +2,12 @@
 require_once './inc/Database.php';
 require_once './inc/UserCRUD.php';
 
+// initializing connecting to the database + creating an instance of CRUD
+$db = new Database();
+$crud = new UserCRUD($db);
+$success = false;
+
+// checking if profile form was submitted & getting the data
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     // usually we need to validate/sanitize
     $username = $_POST["username"];
@@ -22,15 +28,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         die("Error: Could not hash password.");
     }
     # save user to the database
-    $database = new Database();
-    $crud = new UserCRUD($database);
-    if ($crud->create_user($username, $email, $hashed_pasword)) {
-        echo "<p class='alert alert-success'>User Created</p>";
-    } else {
-        echo "<p class='alert alert-danger'>Error: Could not create user.</p>";
-    }
 
-} else{
+    if ($crud->create_user($username, $email, $hashed_pasword)) {
+        $success = true;
+    }
+}
+else {
     // if the page was accessed directly (not via form submission), redirect the user back to the form.
     // This prevents direct access to the processing file.
     header('Location: index.php');
