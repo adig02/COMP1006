@@ -33,7 +33,10 @@
                     </menu>
                 </nav>
                 <!-- admin Login button-->
-                <a href="./login.php" class="login-btn btn">Admin Login</a>
+                <div>
+                    <a href="./login.php" class="login-btn btn">Admin Login</a>
+                    <a href="./register.php" class="login-btn hero-btn-2 btn">Register</a>
+                </div>
             </div>
             <div class="mobile-menu">
                 <!-- mobile hamburger icon -->

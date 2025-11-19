@@ -35,7 +35,6 @@
                         <p>Campus Security Office</p>
                     </div>
                 </div>
-
             </div>
             <div class="footer-separator"></div>
             <div class="footer-copy">

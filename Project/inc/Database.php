@@ -1,9 +1,7 @@
 <?php
 
-class Database
-{
-    // these will hold our database config values
-    // these can only be accessed through the database class since they are private
+class Database{
+    // these will hold my database config values
     private $host = DB_HOST;
     private $db = DB_NAME;
     private $user = DB_USER;
@@ -31,5 +29,4 @@ class Database
         return $this->pdo;
     }
 }
-
 ?>
