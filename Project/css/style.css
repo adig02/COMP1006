@@ -146,6 +146,20 @@ input, textarea, select {
 ol{
     list-style: none;
 }
+.input-error{
+    color: red;
+}
+.success-msg{
+    color: green;
+    text-align: center;
+}
+.success-div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
 
 /*---------------------------------------------------------Header-----------------------------------------------------*/
 header{
@@ -206,6 +220,7 @@ header nav menu li a:hover {
     cursor: pointer;
     transition: background 0.3s, transform 0.2s;
     box-shadow: var(--box-shadow);
+    margin-top: 1rem;
 }
 .btn:hover{
     background: rgb(0, 99, 230);
@@ -213,6 +228,15 @@ header nav menu li a:hover {
 }
 .bold{
     font-weight: bold;
+}
+header div{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.login-btn{
+    margin-top: 0;
 }
 
 /*---------------------------------------------------------Footer-----------------------------------------------------*/
@@ -227,9 +251,10 @@ footer{
 }
 .footer-text{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, auto);
     padding: 2rem 0;
     justify-items: center;
+    width: 100%;
 }
 .footer-quick-links{
     display: flex;
@@ -583,7 +608,22 @@ legend{
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    padding: 3rem;
+    padding: 6rem 3rem 0 3rem;
+}
+.form-radio{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.form-radio-individual{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+    gap: 1rem;
 }
 
 
